@@ -3,6 +3,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans|Cabin+Sketch">
+	<meta property="og:image" content="https://peprojects.dev/alpha-4/ned/yinz-all-woodwork/images/tablesaw.png">
+	<meta name="description" content="Custom woodworking and cabinetry based in Richmond, Virginia.">
 	<title>
 		<?php echo wp_get_document_title(); ?>
 
@@ -12,10 +16,9 @@
 
 </head>
 <body <?php body_class(); ?>>
-	<header>
+	<header class='site-header'>
 	<inner-column>
 
-		<h2>Header</h2>
 
 		<?php include('templates/components/site-menu.php'); ?>
 

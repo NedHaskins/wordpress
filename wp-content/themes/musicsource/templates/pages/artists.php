@@ -14,7 +14,7 @@ $parameters = [
 		//Using the array function here seems to clarify what's going on...
 
 		while ( $loop->have_posts() ) : $loop->the_post(); 
-			include ( getFile('templates/pages/artist.php') );
+			include ( getFile('templates/components/artist-card.php') );
 		endwhile;
 
 		wp_reset_postdata();

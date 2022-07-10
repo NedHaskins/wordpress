@@ -1,1 +1,59 @@
-style.css
+/*
+Theme Name: Music Source
+Author: @nedhaskins
+Author URI: https:/.nedhaskins.io/
+Description: 
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 0.1
+Requires at least: 5.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: musicsource2022
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*@import'styles/reset.css';
+@import'styles/setup.css';
+@import'styles/settings.css';
+@import'styles/structure.css';
+@import'styles/typography.css';
+*/
+/*components*/
+
+/*@import'styles/artist-card.css';*/
+
+
+
+
+/* SETUP */
+
+
+html {
+	--brightsun: hsl(43, 81%, 55%);
+	--sweetcorn: hsl(52, 87%, 72%);
+	--bananayellow: hsl(50, 97%, 59%);
+
+	--falured1: hsl(3, 65%, 31%);
+	--falured2: hsl(4, 69%, 30%);
+}
+
+
+
+body {
+	/*background: hsl(0, 0%, 0%);*/
+/*	color: var(--bananayellow);*/
+	font: 'Josefin Sans';
+}
+
+
+header{
+	background-color: var(--brightsun);
+}
+
+
+.menu ul {
+	display: flex;
+	flex-direction: row;
+}
