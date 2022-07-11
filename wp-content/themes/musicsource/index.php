@@ -11,6 +11,12 @@
 		include('templates/pages/artists.php');
 	}
 
+	if ( is_page('albums') ) {
+		include('templates/pages/albums.php');
+	}
+
+
+
 	if ( is_singular('artists') ) {
 		include('templates/pages/artist.php');
 	}

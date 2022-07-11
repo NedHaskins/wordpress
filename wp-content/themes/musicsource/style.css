@@ -23,7 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /*components*/
 
 @import'styles/artist-card.css';
-
+@import'styles/artist.css';
 
 
 
@@ -51,7 +51,7 @@ body {
 header{
 	background-color: var(--bananayellow);
 	color: black;
-		display: flex;
+	display: flex;
 	flex-direction: row;
 	align-items: space-between;
 }
@@ -75,8 +75,4 @@ ul li {
 	justify-content: center;
 	border: 3px solid green;
 	vertical-align: middle;
-}
-
-.page-content .page-section inner-column {
-	display: flex;
 }

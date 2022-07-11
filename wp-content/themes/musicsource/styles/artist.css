@@ -1,0 +1,21 @@
+.artist-overview {
+
+
+}
+
+.artist-overview inner-column {
+
+	
+}
+
+picture.detail-pic {
+	max-width: 400px;
+	
+}
+
+@media (min-width: 600px) {
+	.artist-overview inner-column{
+		display: flex;
+		flex-direction: row;
+	}
+}
