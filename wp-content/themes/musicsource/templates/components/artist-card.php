@@ -1,13 +1,31 @@
+<?php
+
+$portrait = get_field('portrait');
+
+if ($portrait) {
+	$portrait = $portrait['url'];
+} else {
+	$portrait = "https://peprojects.dev/images/square.jpg";
+}
+
+?>
+
+
 <artist-card>
 
 	<h2 class='name'><?php the_field('name');?></h2>
+
+	<picture>
+		<img src='<?=$portrait?>' alt="">
+	</picture>
+	
 	<h3 class='country'>
 		<?php
 			$countries = get_field('countries');
 			//countries is the name of the WP_Post object that the CMS is referencing.  This corresponds to the field "Countries" and its choices in the "New Artist" form.
 			foreach($countries as $country) {
 				echo $country->post_title;
-}
+			}
 		?>
 	</h3>
 	<h3 class='genre'>
@@ -18,6 +36,7 @@
 			}
 		?>
 	</h3>
+	
 <a href='<?php the_permalink(); ?>'>Read more</a>
 	<!--This is the link to the individual detail page.
 		get_the_permalink shows the link to the current page.-->
